@@ -8,7 +8,7 @@ body{
 
 
 header{
-background-color: rgb(111, 46, 131);
+background-color:#87509c;
 padding:  5px;
 height: 300px;
   h2{
@@ -69,18 +69,18 @@ height: 300px;
   width: 150px;
   height: 30px;
   background-color: orangered;
-  border: 0;
+  border:0;
   &:hover{
     background-color: orange;
   }
   
 }
 main{
-  background-color:rgb(61, 203, 172);
+  background-color:#17c2A4;
   height: 400px;
 }
 .beautiful-team{
- background-color: rgb(244, 246, 250);
+ background-color: #e7f1f8;
  height: 600px;
 }
 .circular-progress {
@@ -109,7 +109,7 @@ font-size: x-small;
   color: #e91e63 !important; 
 }
 .portofolio{
-  background-color: rgb(247, 237, 215);
+  background-color: #FFDD99;
  min-height:500px;
   button{
     border: 0;
@@ -123,7 +123,7 @@ font-size: x-small;
   }
 }
 .about-us{
-   background-color:rgb(225, 68, 142);
+   background-color: #d74680;
     img{
     width: 150px;
     height: 150px;
@@ -134,7 +134,7 @@ font-size: x-small;
   font-family: cursive;
 }
 .get-in-touch{
-  background-color: rgb(59, 78, 120);
+  background-color: #3c5499;
   height: 400px;
    button{
     border:0;
@@ -143,7 +143,7 @@ font-size: x-small;
   background-color:rgb(33, 49, 84); 
   } 
    input , textarea{
-   background-color:rgb(33, 49, 84);
+   background-color:rgb(38, 59, 103);
    border: 0;
    color:white;
    font-size: small;
@@ -163,8 +163,8 @@ font-size: x-small;
   }
 }
 footer{
-   background-color: rgb(37, 50, 76);
-   height: 50px;
+   background-color: #344B8E;
+      height: 50px;
    color: white;
     a{
     margin-right: 20px;

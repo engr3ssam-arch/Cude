@@ -4,7 +4,7 @@ body {
 }
 
 header {
-  background-color: rgb(111, 46, 131);
+  background-color: #87509c;
   padding: 5px;
   height: 300px;
 }
@@ -36,7 +36,7 @@ header .slack-menu {
   padding-top: -20px;
   right: 60px;
 }
-@media (min-width: 481px) and (max-width: 767px) {
+@media (min-width: 480px) and (max-width: 767px) {
   header .slack-menu {
     display: none;
   }
@@ -61,12 +61,12 @@ header .slack-menu a:hover {
 }
 
 main {
-  background-color: rgb(61, 203, 172);
+  background-color: #17c2A4;
   height: 400px;
 }
 
 .beautiful-team {
-  background-color: rgb(244, 246, 250);
+  background-color: #e7f1f8;
   height: 600px;
 }
 
@@ -97,7 +97,7 @@ main {
 }
 
 .portofolio {
-  background-color: rgb(247, 237, 215);
+  background-color: #FFDD99;
   min-height: 500px;
 }
 .portofolio button {
@@ -112,7 +112,7 @@ main {
 }
 
 .about-us {
-  background-color: rgb(225, 68, 142);
+  background-color: #d74680;
 }
 .about-us img {
   width: 150px;
@@ -124,7 +124,7 @@ main {
 }
 
 .get-in-touch {
-  background-color: rgb(59, 78, 120);
+  background-color: #3c5499;
   height: 400px;
 }
 .get-in-touch button {
@@ -134,7 +134,7 @@ main {
   background-color: rgb(33, 49, 84);
 }
 .get-in-touch input, .get-in-touch textarea {
-  background-color: rgb(33, 49, 84);
+  background-color: rgb(38, 59, 103);
   border: 0;
   color: white;
   font-size: small;
@@ -150,7 +150,7 @@ main {
 }
 
 footer {
-  background-color: rgb(37, 50, 76);
+  background-color: #344B8E;
   height: 50px;
   color: white;
 }
