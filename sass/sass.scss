@@ -1,0 +1,138 @@
+body{
+   margin: 0;
+   box-sizing: border-box;
+}
+
+header{
+background-color: rgb(111, 46, 131);
+padding:  5px;
+height: 300px;
+ & h2{
+  font-weight:bold;
+  font-family: cursive;
+  margin-top: 0;
+  display: inline;
+}
+& nav{
+  font-size: x-large;
+ 
+
+}
+& nav a{
+  margin-right: 15px;
+}
+& nav a:hover{
+  background-color: rgb(88, 35, 88);
+}
+
+}
+.work-with-us{
+  width: 150px;
+  height: 30px;
+  background-color: orangered;
+  border: 0;
+  &:hover{
+    background-color: orange;
+  }
+  
+}
+main{
+  background-color:rgb(61, 203, 172);
+  height: 400px;
+}
+.beautiful-team{
+ background-color: rgb(244, 246, 250);
+ height: 600px;
+}
+.circular-progress {
+    width: 120px;
+    height: 120px;
+    position: relative;
+    border-radius: 50%;
+    background: #f0f0f0; 
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+}
+.circular-progress span {
+    position: relative;
+    z-index: 1;
+}
+.text-pink { 
+  color: #e91e63 !important; 
+}
+.portofolio{
+  background-color: rgb(247, 237, 215);
+ min-height:500px;
+  & button{
+    border: 0;
+    background-color: rgb(33, 145, 70);
+    height: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  & button:hover{
+    background-color: green;
+  }
+}
+.about-us{
+   background-color:rgb(225, 68, 142);
+   & img{
+    width: 150px;
+    height: 150px;
+   }
+
+}
+.p-font{
+  font-family: cursive;
+}
+.get-in-touch{
+  background-color: rgb(59, 78, 120);
+  height: 400px;
+  & button{
+    border:0;
+   }
+  & button:hover {
+  background-color:rgb(33, 49, 84); 
+  } 
+  & input , textarea{
+   background-color:rgb(33, 49, 84);
+   border: 0;
+   color: white;
+  } 
+  
+}
+.portofolio-btn{
+  & button{
+    background-color:rgb(238, 225, 196); 
+    border: 0;
+    width: 60px;
+    
+  }
+  & button:hover{
+    background-color: white;
+   
+  }
+}
+footer{
+   background-color: rgb(37, 50, 76);
+   height: 50px;
+   color: white;
+   & a{
+    margin-right: 20px;
+      
+   }
+   
+   & a:hover{
+   color: rgb(64, 131, 224);
+   cursor: pointer;
+   }
+}
+.people-say11{
+  flex-wrap: nowrap;
+}
+.people-say12{
+  @extend .people-say11;
+}
