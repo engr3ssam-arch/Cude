@@ -3,29 +3,68 @@ body{
    box-sizing: border-box;
 }
 
+
+
+
+
 header{
 background-color: rgb(111, 46, 131);
 padding:  5px;
 height: 300px;
- & h2{
+  h2{
   font-weight:bold;
   font-family: cursive;
   margin-top: 0;
   display: inline;
-}
-& nav{
-  font-size: x-large;
  
-
-}
-& nav a{
-  margin-right: 15px;
-}
-& nav a:hover{
-  background-color: rgb(88, 35, 88);
 }
 
+.menu-container {
+    position: relative;
 }
+.menu-icon{
+    display: none;
+    float: right;
+    font-size: large;
+    margin-right: 20px;
+    margin-top: -5px;
+    cursor: pointer;
+    transition: 0.3s;
+   
+}
+ @media (min-width:481px) and (max-width:767px){
+.menu-icon{
+    display: block;
+}
+ }
+
+ .slack-menu{
+  
+  display: block; 
+  
+  padding-top: -20px;
+  right: 60px;
+
+}
+@media (min-width:481px) and (max-width:767px){
+.slack-menu{
+ display: none;
+
+}
+}
+ .slack-menu a{
+  margin-right: 30px;
+  color:white;
+  text-decoration: none;
+   
+  
+}
+& .slack-menu a:hover{
+ 
+ background-color: rgb(59, 14, 59);
+}
+}
+
 .work-with-us{
   width: 150px;
   height: 30px;
@@ -56,6 +95,12 @@ main{
     justify-content: center;
   
 }
+@media (min-width:480px) and (max-width:767px){
+.circular-progress{
+font-size: x-small;
+
+}
+}
 .circular-progress span {
     position: relative;
     z-index: 1;
@@ -66,7 +111,7 @@ main{
 .portofolio{
   background-color: rgb(247, 237, 215);
  min-height:500px;
-  & button{
+  button{
     border: 0;
     background-color: rgb(33, 145, 70);
     height: 50px;
@@ -79,7 +124,7 @@ main{
 }
 .about-us{
    background-color:rgb(225, 68, 142);
-   & img{
+    img{
     width: 150px;
     height: 150px;
    }
@@ -91,21 +136,22 @@ main{
 .get-in-touch{
   background-color: rgb(59, 78, 120);
   height: 400px;
-  & button{
+   button{
     border:0;
    }
   & button:hover {
   background-color:rgb(33, 49, 84); 
   } 
-  & input , textarea{
+   input , textarea{
    background-color:rgb(33, 49, 84);
    border: 0;
-   color: white;
+   color:white;
+   font-size: small;
   } 
   
 }
 .portofolio-btn{
-  & button{
+  button{
     background-color:rgb(238, 225, 196); 
     border: 0;
     width: 60px;
@@ -120,11 +166,15 @@ footer{
    background-color: rgb(37, 50, 76);
    height: 50px;
    color: white;
-   & a{
+    a{
     margin-right: 20px;
-      
+    
    }
-   
+  @media (min-width:481px) and (max-width:767px){
+ a {
+    font-size: xx-small;
+   }
+}
    & a:hover{
    color: rgb(64, 131, 224);
    cursor: pointer;
@@ -135,4 +185,48 @@ footer{
 }
 .people-say12{
   @extend .people-say11;
+}
+
+
+@media (min-width:481px) and (max-width:767px){
+.menu-icon{
+    display: block;
+}
+
+.slack-menu{
+    display: none;
+}
+}
+
+
+h3{
+   @media (min-width:481px) and (max-width:767px){
+    font-size:medium;
+}
+}
+h2{
+  @media (min-width:481px) and (max-width:767px){
+    font-size:large;
+} 
+}
+
+a,p{
+   @media (min-width:481px) and (max-width:767px){
+    font-size:x-small;
+}
+}
+h5{
+   @media (min-width:481px) and (max-width:767px){
+    font-size:small;
+} 
+}
+h6{
+   @media (min-width:481px) and (max-width:767px){
+    font-size:small;
+} 
+}
+button{
+   @media (min-width:481px) and (max-width:767px){
+    font-size:x-small;
+} 
 }

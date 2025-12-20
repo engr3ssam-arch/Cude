@@ -14,14 +14,40 @@ header h2 {
   margin-top: 0;
   display: inline;
 }
-header nav {
-  font-size: x-large;
+header .menu-container {
+  position: relative;
 }
-header nav a {
-  margin-right: 15px;
+header .menu-icon {
+  display: none;
+  float: right;
+  font-size: large;
+  margin-right: 20px;
+  margin-top: -5px;
+  cursor: pointer;
+  transition: 0.3s;
 }
-header nav a:hover {
-  background-color: rgb(88, 35, 88);
+@media (min-width: 481px) and (max-width: 767px) {
+  header .menu-icon {
+    display: block;
+  }
+}
+header .slack-menu {
+  display: block;
+  padding-top: -20px;
+  right: 60px;
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  header .slack-menu {
+    display: none;
+  }
+}
+header .slack-menu a {
+  margin-right: 30px;
+  color: white;
+  text-decoration: none;
+}
+header .slack-menu a:hover {
+  background-color: rgb(59, 14, 59);
 }
 
 .work-with-us {
@@ -56,6 +82,11 @@ main {
   justify-content: center;
 }
 
+@media (min-width: 480px) and (max-width: 767px) {
+  .circular-progress {
+    font-size: x-small;
+  }
+}
 .circular-progress span {
   position: relative;
   z-index: 1;
@@ -106,6 +137,7 @@ main {
   background-color: rgb(33, 49, 84);
   border: 0;
   color: white;
+  font-size: small;
 }
 
 .portofolio-btn button {
@@ -125,6 +157,11 @@ footer {
 footer a {
   margin-right: 20px;
 }
+@media (min-width: 481px) and (max-width: 767px) {
+  footer a {
+    font-size: xx-small;
+  }
+}
 footer a:hover {
   color: rgb(64, 131, 224);
   cursor: pointer;
@@ -132,6 +169,50 @@ footer a:hover {
 
 .people-say11, .people-say12 {
   flex-wrap: nowrap;
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .menu-icon {
+    display: block;
+  }
+  .slack-menu {
+    display: none;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  h3 {
+    font-size: medium;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  h2 {
+    font-size: large;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  a, p {
+    font-size: x-small;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  h5 {
+    font-size: small;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  h6 {
+    font-size: small;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  button {
+    font-size: x-small;
+  }
 }
 
 /*# sourceMappingURL=sass.css.map */
