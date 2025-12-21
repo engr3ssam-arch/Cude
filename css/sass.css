@@ -87,6 +87,11 @@ main i {
     height: 50px;
   }
 }
+@media (min-width: 480px) {
+  .beautiful-team {
+    height: 800px;
+  }
+}
 @media (min-width: 481px) and (max-width: 767px) {
   .beautiful-team i {
     font-size: 0.6rem;
@@ -116,6 +121,9 @@ main i {
 .skills-container .skill-card .progress-circle span {
   font-size: 1.5rem;
   font-weight: bold;
+}
+.skills-container .skill-card .progress-circle p {
+  padding-right: 150px;
 }
 .skills-container .skill-card .progress-circle:hover {
   transform: scale(1.1);
@@ -201,6 +209,23 @@ main i {
   border: 0;
   color: white;
   font-size: small;
+}
+
+.input-group {
+  position: relative;
+  display: inline-block;
+}
+.input-group::after {
+  content: "*";
+  color: red;
+  position: absolute;
+  margin-left: -85px;
+  margin-top: 10px;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+.input-group:focus-within::after, input:not(:placeholder-shown) + .input-group::after {
+  display: none;
 }
 
 .portofolio-btn button {

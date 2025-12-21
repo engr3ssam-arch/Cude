@@ -96,6 +96,9 @@ img{
 
 }
  }
+ @media (min-width:480px) {
+ height: 800px;
+ }
  
 @media (min-width:481px) and (max-width:767px){
 i{
@@ -151,12 +154,15 @@ $inner-gap: 90%;
       margin-bottom: 15px;
       transition: transform 0.3s ease;
       cursor: pointer;
+      
 
       span {
         font-size: 1.5rem;
         font-weight: bold;
       }
-
+       p{
+       padding-right: 150px;
+      }
       &:hover {
         transform: scale(1.1);
       }
@@ -244,7 +250,24 @@ img{
    color:white;
    font-size: small;
   } 
-  
+
+}
+.input-group{
+  position: relative;
+  display: inline-block;
+  &::after{
+    content: "*";
+    color: red;
+    position: absolute;
+    margin-left: -85px;
+    margin-top: 10px;
+    transform: translateY(-50%);
+    pointer-events: none;
+  }
+  &:focus-within::after,
+  input:not(:placeholder-shown) + &::after {
+    display: none;
+  }
 }
 .portofolio-btn{
   button{
