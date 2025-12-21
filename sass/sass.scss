@@ -104,28 +104,97 @@ i{
 }
 
 }
-.circular-progress {
-    width: 120px;
-    height: 120px;
-    position: relative;
-    border-radius: 50%;
-    background: #f0f0f0; 
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  
-}
-@media (min-width:481px) and (max-width:767px){
-.circular-progress{
-font-size: x-small;
 
+$skills: (
+  "web-design": (color: #40b1e1, percent: 90),
+  "html-css":   (color: #d63384, percent: 75),
+  "graphic":    (color: #1abc9c, percent: 70),
+  "ui-ux":      (color: #e67e22, percent: 85)
+);
+
+$breakpoints: (
+  "sm": 576px,
+  "md": 768px,
+  "lg": 992px,
+  "xl": 1200px
+);
+
+@mixin respond-to($breakpoint) {
+  $value: map-get($breakpoints, $breakpoint);
+  
+  @media (max-width: $value) {
+    @content;
+  }
 }
+
+$circle-size: 150px;
+$border-thickness: 10px; 
+$inner-gap: 90%; 
+
+
+.skills-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 50px;
+
+  .skill-card {
+    text-align: center;
+    
+    .progress-circle {
+      width: $circle-size;
+      height: $circle-size;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 15px;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+
+      span {
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+
+      &:hover {
+        transform: scale(1.1);
+      }
+     @include respond-to("md") {
+    width: 100px; 
+    height: 100px;
+    
+    span {
+      font-size: 1rem; 
+    }
+  }
+
+  @include respond-to("sm") {
+    width: 80px; 
+    height: 80px;
+  }
 }
-.circular-progress span {
-    position: relative;
-    z-index: 1;
+    }
+
+  }
+
+
+
+
+@each $name, $data in $skills {
+  .skill-card.#{$name} {
+    .progress-circle {
+      background: 
+        radial-gradient(closest-side, white $inner-gap, transparent 0),
+        conic-gradient(map-get($data, color) (map-get($data, percent) * 1%), #e9ecef 0);
+    }
+  }
 }
+
+
+
+
+
 .text-pink { 
   color: #e91e63 !important; 
 }

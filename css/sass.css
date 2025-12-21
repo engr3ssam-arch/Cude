@@ -93,26 +93,63 @@ main i {
   }
 }
 
-.circular-progress {
-  width: 120px;
-  height: 120px;
-  position: relative;
+.skills-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 50px;
+}
+.skills-container .skill-card {
+  text-align: center;
+}
+.skills-container .skill-card .progress-circle {
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
-  background: #f0f0f0;
-  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
 }
-
-@media (min-width: 481px) and (max-width: 767px) {
-  .circular-progress {
-    font-size: x-small;
+.skills-container .skill-card .progress-circle span {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.skills-container .skill-card .progress-circle:hover {
+  transform: scale(1.1);
+}
+@media (max-width: 768px) {
+  .skills-container .skill-card .progress-circle {
+    width: 100px;
+    height: 100px;
+  }
+  .skills-container .skill-card .progress-circle span {
+    font-size: 1rem;
   }
 }
-.circular-progress span {
-  position: relative;
-  z-index: 1;
+@media (max-width: 576px) {
+  .skills-container .skill-card .progress-circle {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+.skill-card.web-design .progress-circle {
+  background: radial-gradient(closest-side, white 90%, transparent 0), conic-gradient(#40b1e1 90%, #e9ecef 0);
+}
+
+.skill-card.html-css .progress-circle {
+  background: radial-gradient(closest-side, white 90%, transparent 0), conic-gradient(#d63384 75%, #e9ecef 0);
+}
+
+.skill-card.graphic .progress-circle {
+  background: radial-gradient(closest-side, white 90%, transparent 0), conic-gradient(#1abc9c 70%, #e9ecef 0);
+}
+
+.skill-card.ui-ux .progress-circle {
+  background: radial-gradient(closest-side, white 90%, transparent 0), conic-gradient(#e67e22 85%, #e9ecef 0);
 }
 
 .text-pink {
