@@ -64,10 +64,33 @@ main {
   background-color: #17c2A4;
   height: 400px;
 }
+main i {
+  font-size: 2rem;
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  main i {
+    font-size: 1rem;
+  }
+}
 
 .beautiful-team {
   background-color: #e7f1f8;
   height: 600px;
+}
+.beautiful-team img {
+  width: 180px;
+  height: 180px;
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .beautiful-team img {
+    width: 50px;
+    height: 50px;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .beautiful-team i {
+    font-size: 0.6rem;
+  }
 }
 
 .circular-progress {
@@ -82,7 +105,7 @@ main {
   justify-content: center;
 }
 
-@media (min-width: 480px) and (max-width: 767px) {
+@media (min-width: 481px) and (max-width: 767px) {
   .circular-progress {
     font-size: x-small;
   }
@@ -117,10 +140,13 @@ main {
 .about-us img {
   width: 150px;
   height: 150px;
+  margin-right: 20px;
 }
-
-.p-font {
-  font-family: cursive;
+@media (min-width: 481px) and (max-width: 767px) {
+  .about-us img {
+    width: 90px;
+    height: 90px;
+  }
 }
 
 .get-in-touch {
@@ -147,6 +173,7 @@ main {
 }
 .portofolio-btn button:hover {
   background-color: white;
+  cursor: pointer;
 }
 
 footer {
@@ -157,14 +184,14 @@ footer {
 footer a {
   margin-right: 20px;
 }
+footer a:hover {
+  color: rgb(64, 131, 224);
+  cursor: pointer;
+}
 @media (min-width: 481px) and (max-width: 767px) {
   footer a {
     font-size: xx-small;
   }
-}
-footer a:hover {
-  color: rgb(64, 131, 224);
-  cursor: pointer;
 }
 
 .people-say11, .people-say12 {
