@@ -31,14 +31,19 @@ header .menu-icon {
     display: block;
   }
 }
+@media (max-width: 480px) {
+  header .slack-menu {
+    display: none;
+  }
+}
 header .slack-menu {
   display: block;
   padding-top: -20px;
   right: 60px;
 }
 @media (min-width: 480px) and (max-width: 767px) {
-  header .slack-menu {
-    display: none;
+  header .menu-icon {
+    display: block;
   }
 }
 header .slack-menu a {
@@ -75,7 +80,7 @@ main i {
 
 .beautiful-team {
   background-color: #e7f1f8;
-  height: 600px;
+  height: 700px;
 }
 .beautiful-team img {
   width: 180px;
@@ -85,11 +90,6 @@ main i {
   .beautiful-team img {
     width: 50px;
     height: 50px;
-  }
-}
-@media (min-width: 480px) {
-  .beautiful-team {
-    height: 800px;
   }
 }
 @media (min-width: 481px) and (max-width: 767px) {
@@ -211,21 +211,23 @@ main i {
   font-size: small;
 }
 
-.input-group {
+.input-container {
   position: relative;
-  display: inline-block;
 }
-.input-group::after {
-  content: "*";
-  color: red;
+.input-container .input-control::placeholder {
+  color: white;
+}
+.input-container .input-control:not(:placeholder-shown) ~ .star {
+  visibility: hidden;
+}
+.input-container .star {
   position: absolute;
-  margin-left: -85px;
-  margin-top: 10px;
+  right: 15px;
+  top: 50%;
   transform: translateY(-50%);
+  color: red;
   pointer-events: none;
-}
-.input-group:focus-within::after, input:not(:placeholder-shown) + .input-group::after {
-  display: none;
+  transition: all 0.2s ease-in-out;
 }
 
 .portofolio-btn button {
