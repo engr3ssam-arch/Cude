@@ -28,15 +28,22 @@ height: 300px;
    
 }
  @media (min-width:481px) and (max-width:767px){
+   height: 200px;
 .menu-icon{
     display: block;
 }
+
+
  }
+
 @media (max-width:480px){
+  height: 200px;
 .slack-menu{
  display: none;
 
 }
+
+
 }
  .slack-menu{
   
@@ -78,37 +85,57 @@ height: 300px;
 }
 main{
   background-color:#17c2A4;
-  height: 400px;
+  min-height: 100px;
   i{
     font-size: 2rem;
   }
   @media (min-width:480px) and (max-width:767px){
+    height: 700px;
   i {
       font-size: 1rem;
     }
   }
+ 
 }
 .beautiful-team{
  background-color: #e7f1f8;
  height: 700px;
+ padding-top: 50px;
+ 
  img{
-     width: 180px;
+    width: 180px;
     height: 180px;
- }
- @media (min-width:481px) and (max-width:767px){
-img{
-  width: 50px;
-  height: 50px;
-
+    transition: 0.3s ease;
+  &:hover{
+  transform: scale(1.15); 
+  box-shadow: 0 0 15px rgba(23, 162, 184, 0.5); 
+  filter: brightness(1.1);
 }
  }
 
- 
-@media (min-width:481px) and (max-width:767px){
+
+ @media (min-width:481px) and (max-width:767px){
+height: 1100px;
+  img{
+  width: 80px;
+  height: 80px;
+
+}
+
 i{
  font-size: 0.6rem;
 }
+ }
+ @media (min-width:480px){
+  
+  img{
+  width: 50px;
+  height: 70px;
+
 }
+
+ }
+ 
 
 }
 

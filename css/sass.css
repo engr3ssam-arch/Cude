@@ -27,11 +27,17 @@ header .menu-icon {
   transition: 0.3s;
 }
 @media (min-width: 481px) and (max-width: 767px) {
+  header {
+    height: 200px;
+  }
   header .menu-icon {
     display: block;
   }
 }
 @media (max-width: 480px) {
+  header {
+    height: 200px;
+  }
   header .slack-menu {
     display: none;
   }
@@ -67,12 +73,15 @@ header .slack-menu a:hover {
 
 main {
   background-color: #17c2A4;
-  height: 400px;
+  min-height: 100px;
 }
 main i {
   font-size: 2rem;
 }
 @media (min-width: 480px) and (max-width: 767px) {
+  main {
+    height: 700px;
+  }
   main i {
     font-size: 1rem;
   }
@@ -81,20 +90,34 @@ main i {
 .beautiful-team {
   background-color: #e7f1f8;
   height: 700px;
+  padding-top: 50px;
 }
 .beautiful-team img {
   width: 180px;
   height: 180px;
+  transition: 0.3s ease;
+}
+.beautiful-team img:hover {
+  transform: scale(1.15);
+  box-shadow: 0 0 15px rgba(23, 162, 184, 0.5);
+  filter: brightness(1.1);
 }
 @media (min-width: 481px) and (max-width: 767px) {
-  .beautiful-team img {
-    width: 50px;
-    height: 50px;
+  .beautiful-team {
+    height: 1100px;
   }
-}
-@media (min-width: 481px) and (max-width: 767px) {
+  .beautiful-team img {
+    width: 80px;
+    height: 80px;
+  }
   .beautiful-team i {
     font-size: 0.6rem;
+  }
+}
+@media (min-width: 480px) {
+  .beautiful-team img {
+    width: 50px;
+    height: 70px;
   }
 }
 
