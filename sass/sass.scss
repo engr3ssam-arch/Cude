@@ -183,9 +183,9 @@ $inner-gap: 90%;
       align-items: center;
       justify-content: center;
       margin-bottom: 15px;
+      margin-left: 80px;
       transition: transform 0.3s ease;
       cursor: pointer;
-      
 
       span {
         font-size: 1.5rem;
@@ -355,11 +355,22 @@ footer{
 }
    
 }
-.people-say11{
-  flex-wrap: nowrap;
-}
-.people-say12{
-  @extend .people-say11;
+.scroll-top{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: white;
+    font-size: 20px;
+    top: 50%;            
+    right: 20px;    
+    cursor: pointer;
+    display: none;
+    
+    &:hover{
+    background-color:black;
+    color: white;
+} 
 }
 
 

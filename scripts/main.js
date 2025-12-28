@@ -15,3 +15,24 @@ $(document).ready(function(){
     event.stopPropagation();
   });
 });
+
+//scroll top
+let topBtn = document.getElementById("topBtn");
+
+let showHeight = 800;   
+
+window.onscroll = function () {
+  if (window.scrollY >= showHeight) {
+    topBtn.style.display = "block";
+  } else {
+    topBtn.style.display = "none";
+  }
+};
+
+
+topBtn.onclick = function () {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+};
