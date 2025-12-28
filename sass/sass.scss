@@ -99,12 +99,12 @@ main{
 }
 .beautiful-team{
  background-color: #e7f1f8;
- height: 700px;
- padding-top: 50px;
+ min-height: 250px;
+
  
  img{
-    width: 180px;
-    height: 180px;
+    width: 200px;
+    height: 200px;
     transition: 0.3s ease;
   &:hover{
   transform: scale(1.15); 
@@ -115,10 +115,10 @@ main{
 
 
  @media (min-width:481px) and (max-width:767px){
-height: 1100px;
+
   img{
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
 
 }
 
@@ -127,10 +127,11 @@ i{
 }
  }
  @media (min-width:480px){
-  
+
   img{
-  width: 50px;
-  height: 70px;
+  width: 80px;
+  height: 80px;
+ 
 
 }
 

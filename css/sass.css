@@ -89,12 +89,11 @@ main i {
 
 .beautiful-team {
   background-color: #e7f1f8;
-  height: 700px;
-  padding-top: 50px;
+  min-height: 250px;
 }
 .beautiful-team img {
-  width: 180px;
-  height: 180px;
+  width: 200px;
+  height: 200px;
   transition: 0.3s ease;
 }
 .beautiful-team img:hover {
@@ -103,12 +102,9 @@ main i {
   filter: brightness(1.1);
 }
 @media (min-width: 481px) and (max-width: 767px) {
-  .beautiful-team {
-    height: 1100px;
-  }
   .beautiful-team img {
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
   }
   .beautiful-team i {
     font-size: 0.6rem;
@@ -116,8 +112,8 @@ main i {
 }
 @media (min-width: 480px) {
   .beautiful-team img {
-    width: 50px;
-    height: 70px;
+    width: 80px;
+    height: 80px;
   }
 }
 
