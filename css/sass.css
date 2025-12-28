@@ -137,8 +137,7 @@ main i {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 15px;
-  margin-left: 80px;
+  margin: 0 auto;
   transition: transform 0.3s ease;
   cursor: pointer;
 }
@@ -202,20 +201,43 @@ main i {
 .portofolio button:hover {
   background-color: green;
 }
+.portofolio img {
+  transition: 0.3s ease;
+}
+.portofolio img:hover {
+  transform: scale(1.15);
+  box-shadow: 0 0 15px #000;
+  filter: brightness(1.1);
+}
 
 .about-us {
   background-color: #d74680;
 }
 .about-us img {
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
   margin-right: 20px;
+  transition: 0.3s ease;
+}
+.about-us img:hover {
+  transform: scale(1.15);
+  box-shadow: 0 0 15px rgba(9, 9, 9, 0.5);
+  filter: brightness(1.1);
 }
 @media (min-width: 481px) and (max-width: 767px) {
   .about-us img {
-    width: 90px;
-    height: 90px;
+    width: 80px;
+    height: 80px;
   }
+}
+.about-us .people-say {
+  transition: 0.3s ease;
+}
+.about-us .people-say:hover {
+  transform: scale(1.15);
+  box-shadow: 0 0 15px rgba(9, 9, 9, 0.5);
+  filter: brightness(1.1);
 }
 
 .get-in-touch {

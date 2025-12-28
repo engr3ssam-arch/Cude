@@ -182,11 +182,12 @@ $inner-gap: 90%;
       display: flex;
       align-items: center;
       justify-content: center;
-      margin-bottom: 15px;
-      margin-left: 80px;
+      margin: 0 auto;
       transition: transform 0.3s ease;
+      
       cursor: pointer;
 
+         
       span {
         font-size: 1.5rem;
         font-weight: bold;
@@ -248,20 +249,44 @@ $inner-gap: 90%;
   & button:hover{
     background-color: green;
   }
+  img{
+
+    transition: 0.3s ease;
+  &:hover{
+  transform: scale(1.15); 
+  box-shadow: 0 0 15px #000; 
+  filter: brightness(1.1);
+}
+}
 }
 .about-us{
    background-color: #d74680;
     img{
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
     margin-right: 20px;
+     transition: 0.3s ease;
+  &:hover{
+  transform: scale(1.15); 
+  box-shadow: 0 0 15px rgba(9, 9, 9, 0.5); 
+  filter: brightness(1.1);
+}
    }
   
  @media (min-width:481px) and (max-width:767px){
 img{
-  width: 90px;
-  height: 90px;
+  width: 80px;
+  height: 80px;
 
+}
+ }
+ .people-say{
+transition: 0.3s ease;
+&:hover{
+  transform: scale(1.15); 
+  box-shadow: 0 0 15px rgba(9, 9, 9, 0.5); 
+  filter: brightness(1.1);
 }
  }
 
@@ -283,23 +308,7 @@ img{
   } 
 
 }
-// .input-group{
-//   position: relative;
-//   display: inline-block;
-//   &::after{
-//     content: "*";
-//     color: red;
-//     position: absolute;
-//     margin-left: -85px;
-//     margin-top: 10px;
-//     transform: translateY(-50%);
-//     pointer-events: none;
-//   }
-//   &:focus-within::after,
-//   input:not(:placeholder-shown) + &::after {
-//     display: none;
-//   }
-// }
+
 .input-container{
   position: relative;
 .input-control{
